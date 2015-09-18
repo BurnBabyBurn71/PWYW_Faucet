@@ -5,4 +5,4 @@ PWYW or Pay What You Want is a series of projects that I will be working on in o
 A simple one, essentially merge two existing open-source websites into one, and modifying it for use as a cryptocurrency faucet. The two websites are ["Transitions-for-off-canvas-navigations"](http://tympanus.net/codrops/2013/08/28/transitions-for-off-canvas-navigations/) and ["FullscreenForm"](http://tympanus.net/Development/FullscreenForm/).
 
 ##Preview
-See a live preview of the site in it's current development state ["here"](http://htmlpreview.github.io/?https://github.com/BurnBabyBurn71/PWYW_Faucet/blob/master/index.html)
+See a live preview of the site in it's current development state [here](http://htmlpreview.github.io/?https://github.com/BurnBabyBurn71/PWYW_Faucet/blob/master/index.html)
