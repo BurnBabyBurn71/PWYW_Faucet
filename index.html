@@ -1,27 +1,25 @@
 <!DOCTYPE html>
 <html lang="en" class="no-js">
-
-    <head>
+	<head>
 		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>Fullscreen Form Interface</title>
-		<meta name="description" content="Fullscreen Form Interface: A distraction-free form concept with fancy animations" />
-		<meta name="keywords" content="fullscreen form, css animations, distraction-free, web design" />
+		<meta name="description" content="Sidebar Transitions: Transition effects for off-canvas views" />
+		<meta name="keywords" content="transition, off-canvas, navigation, effect, 3d, css3, smooth" />
 		<meta name="author" content="Codrops" />
 		<link rel="shortcut icon" href="../favicon.ico">
 		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
 		<link rel="stylesheet" type="text/css" href="css/demo.css" />
-		<link rel="stylesheet" type="text/css" href="css/component.css" />
-		<link rel="stylesheet" type="text/css" href="css/cs-select.css" />
 		<link rel="stylesheet" type="text/css" href="css/icons.css" />
+		<link rel="stylesheet" type="text/css" href="css/component.css" />
+        <link rel="stylesheet" type="text/css" href="css/cs-select.css" />
 		<script src="js/modernizr.custom.js"></script>
 	</head>
-
-
 	<body>
-        <div id="st-container" class="st-container">
-		    <nav class="st-menu st-effect-11" id="menu-11">
+
+		<div style="height:100%;" id="st-container" class="st-container">
+			<nav class="st-menu st-effect-11" id="menu-11">
 				<h2 class="icon icon-lab">Sidebar</h2>
 				<ul>
 					<li><a class="icon icon-data" href="#">Data Management</a></li>
@@ -32,17 +30,28 @@
 				</ul>
 			</nav>
 
-			<div class="fs-form-wrap" id="fs-form-wrap">
 
-                <div class="st-pusher">
-                <div class="st-content"><!-- this is the wrapper for the content -->
-					<div class="st-content-inner"><!-- extra div for emulating position:fixed of the menu -->
-					    <div class="main clearfix">
-                            <div id="st-trigger-effects">
-                                <button data-effect="st-effect-11"><a id="nav-toggle" href="#"><span></span></a></button>
 
-				<form id="myform" class="fs-form fs-form-full" autocomplete="off">
-					<ol class="fs-fields">
+			<!-- content push wrapper -->
+			<div class="st-pusher">
+
+            <div class="fs-form-wrap" id="fs-form-wrap">
+            <header style=" z-index: 0;margin-top: 0px;position: absolute;right:0;left:0;" class="codrops-header">
+			    <h1>Sidebar Transitions <span>Transition effects for off-canvas views</span></h1>
+                </header>
+
+                <!-- Burger Button  -->
+                <div style="z-index: 999999;position: absolute" id="st-trigger-effects">
+                <button style="padding: 0em 0em;margin:40px;" data-effect="st-effect-11"><div id="nav-toggle"><a style="float:left;" id="nav-toggle" href="#"><span></span></a></div></button>
+                </div>
+				<div class="st-content"><!-- this is the wrapper for the content -->
+
+                    <div style="padding-top:14%;" class="st-content-inner"><!-- extra div for emulating position:fixed of the menu -->
+
+						<div class="main clearfix">
+                        <div class="container">
+                        <form id="myform" class="fs-form fs-form-full" autocomplete="off">
+					    <ol class="fs-fields">
 						<li>
 							<label class="fs-field-label fs-anim-upper" for="q1">What's your Bitcoin address?</label>
 							<input class="fs-anim-lower" id="q1" name="q1" type="text" placeholder="1CgKaPZusxuDKEENoJAEjbwkeCsNocg1md" required/>
@@ -54,14 +63,19 @@
 					</ol><!-- /fs-fields -->
 					<button class="fs-submit" type="submit">Send answers</button>
 				</form><!-- /fs-form -->
-			</div><!-- /fs-form-wrap -->
-        </div></div></div></div></div></div></div>
-		</div><!-- /container -->
+
+
+
+						</div><!-- /main -->
+					</div><!-- /st-content-inner -->
+				</div><!-- /st-content -->
+			</div><!-- /st-pusher -->
+		</div><!-- /st-container -->
 		<script src="js/classie.js"></script>
+		<script src="js/sidebarEffects.js"></script>
 		<script src="js/selectFx.js"></script>
 		<script src="js/fullscreenForm.js"></script>
-        <script src="js/sidebarEffects.js"></script>
-		<script>
+                <script>
 			(function() {
 				var formWrap = document.getElementById( 'fs-form-wrap' );
 
@@ -81,7 +95,5 @@
 				} );
 			})();
 		</script>
-		</div>
-
 	</body>
 </html>
