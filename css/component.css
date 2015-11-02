@@ -48,8 +48,10 @@
 }
 
 .fs-form-overview {
-	padding: 2.5em 30% 6em;
-	width: 100%;
+	margin-left:auto;
+	margin-right:auto;
+	padding: 1.2em 10% 10em;
+	width: 75%;
 	height: 100%;
 	background: #fffed8;
 	color: #3b3f45;
@@ -58,9 +60,10 @@
 
 .fs-form-overview .fs-fields::before {
 	display: block;
-	margin-bottom: 2.5em;
+	margin-bottom: 1em;
 	color: #3b3f45;
 	content: 'Review & Submit';
+	text-align:center;
 	font-weight: 700;
 	font-size: 1.85em;
 }
@@ -107,6 +110,64 @@ button.fs-continue,
 
 .no-js .fs-form-full .fs-fields > li {
 	visibility: visible;
+}
+
+.bbb71-ad2
+{
+	overflow : auto;
+	position:fixed; 
+	top:20%; 
+	left:15%;
+	z-index:999999;
+	
+}
+
+.bbb71-ad3
+{
+	overflow : auto;
+	position:fixed; 
+	top:20%; 
+	right:15%;
+	z-index:999999;
+}
+
+.bbb71-ad2-2
+{
+	overflow : auto;
+	position: absolute; 
+	left: -60%; 
+	top: -220%; 
+	right:0%; 
+	bottom:0%;
+	z-index:999999;
+}
+
+.bbb71-ad3-2
+{
+	overflow : auto;
+	position: absolute; 
+	left: 130%; 
+	top: -220%; 
+	right:0%; 
+	bottom:0%;
+	z-index:999999;
+}
+
+.bbb71-ad1
+{
+	overflow : auto;
+	position: relative; 
+	top: 60px; 
+	z-index:999999;
+}
+
+.bbb71-ad1-2
+{
+	display: none;
+}
+
+.hide-burnbabyburn71 {
+	visibility: hidden !important;
 }
 
 .fs-show {
@@ -167,7 +228,7 @@ button.fs-continue,
 .fs-form-overview .fs-fields > li,
 .no-js .fs-form .fs-fields > li {
 	margin: 1em 0 2em;
-	padding: 0 0 2em 0;
+	padding: 0 0 1em 0;
 	border-bottom: 2px solid rgba(0,0,0,0.1);
 }
 
@@ -673,9 +734,11 @@ button.fs-continue:hover {
 
 /* Error message */
 .fs-message-error {
+	text-align:center;
 	position: absolute;
-	bottom: 75%;
+	top: 450px;
 	left: 50%;
+	right: 80%
 	z-index: 800;
 	max-width: 960px;
 	width: 70%;
@@ -807,6 +870,17 @@ input[type=text]::-ms-clear {
 	.fs-form-wrap {
 		font-size: 70%;
 	}
+	
+	.bbb71-ad2
+	{
+		visibility:hidden;
+	
+	}
+
+	.bbb71-ad3
+	{
+		visibility:hidden;
+	}
 
 	.fs-form {
 		top: 6em;
@@ -866,14 +940,16 @@ input[type=text]::-ms-clear {
 	button.fs-submit {
 		width: 100%;
 		font-size: 1.25em;
+		top:-30px;
 	}
 
 	.fs-message-error {
+		visibility: hidden;
 		bottom: 1.75em;
 		left: 0;
 		padding: 0 90px 0 2em;
 		width: 100%;
-		font-size: 1.5em;
+		font-size: 0.1em;
 		-webkit-transform: translate3d(0,-5px,0);
 		transform: translate3d(0,-5px,0);
 	}
@@ -881,6 +957,9 @@ input[type=text]::-ms-clear {
 	.fs-message-error.fs-show {
 		-webkit-transform: translate3d(0,0,0);
 		transform: translate3d(0,0,0);
+	}
+	.bbb71-ad1{
+		 transform:scale(0.75);transform-origin:0 0%;
 	}
 }
 

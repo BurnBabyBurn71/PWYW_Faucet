@@ -294,6 +294,24 @@
 					classie.remove( self.formEl, 'fs-form-full' );
 					classie.add( self.formEl, 'fs-form-overview' );
 					classie.add( self.formEl, 'fs-show' );
+					
+					// Advertisement setup 
+					var el0 = document.getElementById("ad0");
+					var el = document.getElementById("ad");
+					var el2 = document.getElementById("ad2");
+					//classie.add( el, 'hide-burnbabyburn71' );
+					//classie.add( el2, 'hide-burnbabyburn71' );
+					classie.remove( el, 'bbb71-ad2' );
+					classie.remove( el2, 'bbb71-ad3' );
+					classie.remove( el0, 'bbb71-ad1' );
+					
+					classie.add( el0, 'bbb71-ad1-2' );
+					classie.add( el, 'bbb71-ad2-2' );
+					classie.add( el2, 'bbb71-ad3-2' );
+					
+					
+					
+					// add new class
 					// callback
 					self.options.onReview();
 				}
