@@ -9,5 +9,5 @@ Merge two existing open-source websites into one, and modifying it for use as a 
 
 ##Usage
  - Create a folder in the templates folder of Faucet in a Box (the name of the folder will be the title of the template)
- - Move contents of this repository to the folder you have create
+ - Move contents of this repository to the folder you have created
  - Apply the template to the site in the admin page
