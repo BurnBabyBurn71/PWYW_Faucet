@@ -51,7 +51,7 @@
 			    <!-- OLD HEADER <h1> <?php echo $data["name"]; ?> <span> <?php echo $data["short"]; ?> </span></h1> -->
 				
 				<!-- Placeholder Logo -->
-				<img src="templates/burnbabyburn71/img/LOGO.png" style="margin-top:-2%;" height="200px" width="200px">
+				<img src="templates/burnbabyburn71/img/LOGO.png" style="margin-top:-2%;" height="150px" width="150px">
 				
 				
                 </header>
@@ -64,7 +64,7 @@
 			
 				<div class="st-content"><!-- this is the wrapper for the content -->
 				
-                    <div style="padding-top:250px;" class="st-content-inner"><!-- extra div for emulating position:fixed of the menu -->
+                    <div style="padding-top:180px;" class="st-content-inner"><!-- extra div for emulating position:fixed of the menu -->
 
 						<div class="main clearfix">
                         <div class="container">

@@ -51,8 +51,8 @@
 	margin-left:auto;
 	margin-right:auto;
 	padding: 1.2em 10% 10em;
-	width: 75%;
-	height: 100%;
+	width: 700px;
+	height: 1800px;
 	background: #fffed8;
 	color: #3b3f45;
 	font-size: 1.2em;
@@ -135,8 +135,8 @@ button.fs-continue,
 {
 	overflow : auto;
 	position: absolute; 
-	left: -60%; 
-	top: -220%; 
+	left: -300px; 
+	top: -260%; 
 	right:0%; 
 	bottom:0%;
 	z-index:999999;
@@ -146,8 +146,8 @@ button.fs-continue,
 {
 	overflow : auto;
 	position: absolute; 
-	left: 130%; 
-	top: -220%; 
+	left: 620px; 
+	top: -260%; 
 	right:0%; 
 	bottom:0%;
 	z-index:999999;
