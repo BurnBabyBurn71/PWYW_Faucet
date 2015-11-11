@@ -52,7 +52,7 @@
 	margin-right:auto;
 	padding: 1.2em 10% 10em;
 	width: 700px;
-	height: 1800px;
+	height: 500px;
 	background: #fffed8;
 	color: #3b3f45;
 	font-size: 1.2em;
@@ -136,9 +136,8 @@ button.fs-continue,
 	overflow : auto;
 	position: absolute; 
 	left: -300px; 
-	top: -260%; 
 	right:0%; 
-	bottom:0%;
+	bottom:-120px;
 	z-index:999999;
 }
 
@@ -147,9 +146,8 @@ button.fs-continue,
 	overflow : auto;
 	position: absolute; 
 	left: 620px; 
-	top: -260%; 
 	right:0%; 
-	bottom:0%;
+	bottom:-120px;
 	z-index:999999;
 }
 
