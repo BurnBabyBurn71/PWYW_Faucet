@@ -18,6 +18,7 @@
 		<script type="text/javascript" src="templates/burnbabyburn71/libs/mmc.js"></script>
 		<script src="templates/burnbabyburn71/js/modernizr.custom.js"></script>
 	</head>
+	
 	<body>
 
 		<div style="height:100%;" id="st-container" class="st-container">
@@ -40,11 +41,44 @@
 				</ul>
 			</nav>
 			
-
-			<!-- content push wrapper -->
-			<div class="st-pusher">
 			
-				
+			<!-- Error notification -->
+			<div  style="width:100%; display:block;">
+				<div style=" width: 300px;height: 300px; position: absolute;top: 50%;left: 50%;margin-left: -150px;margin-top: -150px;">
+					<?php if(!$data["captcha_valid"]): ?>
+						<div id="hidethis" class="alert"  role="alert">
+							<p >Invalid Captcha! </p>
+							<button id="hideid"> Close this window</button>
+						</div>
+					<?php endif; ?>
+				</div>
+			</div>
+			
+			<div style="width:100%; display:block;">
+				<div style=" width: 300px;height: 300px; position: absolute;top: 50%;left: 50%;margin-left: -150px;margin-top: -150px;">
+					<?php if($data["error"]): ?>	
+						<div id="hidethis" class="alert"  role="alert">
+							<p ><?php echo $data["error"]; ?></p>
+							<button id="hideid"> Close this window</button>
+						</div>
+					<?php endif; ?>
+				</div>
+			</div>
+			
+			<!-- Success notification -->
+			<div style="width:100%; display:block;">
+				<div style=" width: 300px;height: 300px; position: absolute;top: 50%;left: 50%;margin-left: -150px;margin-top: -150px;">
+					<?php if(!$data["error"] and $data["captcha_valid"] and (isset($_POST['Submit']))): ?>	
+						<div id="hidethis" class="alert-success"  role="alert">
+							<p> Succesful </p>
+							<button id="hideid"> Close this window</button>
+						</div>
+					<?php endif; ?>
+				</div>
+			</div>
+			
+			<!-- content push wrapper -->
+			<div class="st-pusher">		
 				
             <div class="fs-form-wrap" id="fs-form-wrap">
             <header style=" z-index: 0;margin-top: 0px;position: absolute;right:0;left:0;" class="codrops-header">
@@ -68,7 +102,10 @@
 
 						<div class="main clearfix">
                         <div class="container">
-                        <form id="myform" class="fs-form fs-form-full" autocomplete="off">
+                        <form method="POST" id="myform" class="fs-form fs-form-full" autocomplete="off">
+						
+
+								
 					    <ol class="fs-fields">
 						<li style="text-align:center;">
 							<label style="padding-top:0%;" class="fs-field-label fs-anim-upper" for="q1">What's your Bitcoin address?</label>
@@ -145,5 +182,15 @@
 				} );
 			})();
 		</script>
+		<?php if($data['button_timer']): ?>
+		<script type="text/javascript" src="libs/button-timer.js"></script>
+		<script> startTimer(<?php echo $data['button_timer']; ?>); </script>
+		<?php endif; ?>
+		<?php if($data['block_adblock'] == 'on'): ?>
+		<script type="text/javascript" src="libs/advertisement.js"></script>
+		<script type="text/javascript" src="libs/check.js"></script>
+		<?php endif; ?>
+		
+		
 	</body>
 </html>

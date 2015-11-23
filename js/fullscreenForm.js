@@ -28,7 +28,15 @@
 		}
 		return a;
 	}
+	
+   $("#hideid").click(function () {
+		
+	  $('#hidethis').addClass('hide');
+	  
+    });
 
+	
+	
 	/**
 	 * createElement function
 	 * creates an element with tag = tag, className = opt.cName, innerHTML = opt.inner and appends it to opt.appendTo
